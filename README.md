@@ -1,4 +1,4 @@
-# fukushi_embedding
+# AdverbVec
 This project utilizes word embeddings and various clustering algorithms to group adverbs based on semantic similarity, facilitating deeper insights into linguistic patterns.
 
 <p align="center">
@@ -7,25 +7,7 @@ This project utilizes word embeddings and various clustering algorithms to group
 
 ## About this project
 
-    Imports: The necessary libraries are imported, including tools for data manipulation, clustering algorithms, dimensionality reduction, and visualization.
-
-    Load ChiVe Model: The ChiVe word embedding model is loaded using the Magnitude library.
-
-    Embedding: Adverbs are embedded using the ChiVe model, and both the adverbs and their embeddings are stored in arrays.
-
-    Clustering Algorithms:
-        K-Means Clustering: Adverbs are clustered using K-Means clustering, and the results are visualized using PCA and t-SNE.
-        Gaussian Mixture Model (GMM): GMM clustering is applied to the embeddings, and the results are visualized similarly.
-        Hierarchical Clustering: Adverbs are clustered hierarchically, and the results are visualized.
-        DBSCAN: Density-based spatial clustering of applications with noise (DBSCAN) is applied to the embeddings, followed by visualization.
-        Affinity Propagation: Clustering is performed using the affinity propagation algorithm, and the results are visualized.
-        Mean Shift: Mean shift clustering is applied, and the clusters are visualized.
-        Spectral Clustering: Spectral clustering is performed, and the clusters are visualized.
-        Self-Organizing Maps (SOM): Mini-batch K-Means is used as an approximation to SOM, and the results are visualized.
-
-    Visualization: Visualization techniques like PCA and t-SNE are employed to plot the clusters in a 2D space.
-
-    Data Persistence: The adverbs, embeddings, and clustering results can be saved to disk using NumPy arrays and pickle.
+AdverbVec is a Python tool for clustering and analyzing adverbs using high-dimensional embeddings. Leveraging advanced techniques, it provides a seamless way to explore the semantic relationships between adverbs in the Japanese language. With its intuitive interface and powerful features, AdverbVec empowers users to gain insights into adverb usage patterns and linguistic nuances.
     
 ## Getting Started
 
@@ -50,7 +32,7 @@ Here is an easy way to use our GitHub repository.
 
 Open the command line interface and run:
   ```sh
-  git clone https://github.com/ericodle/fukushi_embedding.git
+  git clone https://github.com/ericodle/AdverbVec.git
   ```
 
 ### Step 2: Navigate to the project directory
@@ -63,30 +45,30 @@ Find where your computer saved the project, then enter:
 If performed correctly, your command line interface should resemble
 
 ```
-user@user:~/fukushi_embedding-main$
+user@user:~/AdverbVec-main$
 ```
 
 ### Step 3: Create a virtual environment: 
 I like to use a **virtual environment**.
-Let's make one called "fe-env"
+Let's make one called "av-env"
 
 
 ```sh
-python3 -m venv fe-env
+python3 -m venv av-env
 ```
 
-A virtual environment named "fe-env" has been created. 
+A virtual environment named "av-env" has been created. 
 Let's enter the environment to do our work:
 
 
 ```sh
-source fe-env/bin/activate
+source av-env/bin/activate
 ```
 
 When performed correctly, your command line interface prompt should look like 
 
 ```
-(fe-env) user@user:~/fukushi_embedding-main$
+(av-env) user@user:~/AdverbVec-main$
 ```
 
 ### Step 3: Install requirements.txt
